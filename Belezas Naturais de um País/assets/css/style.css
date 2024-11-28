@@ -533,6 +533,7 @@ img[src="/assets/imagens/Lagos de VuomajåhkK.webp"] {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 */*Galeria de imagens*/
 
 {
@@ -574,6 +575,13 @@ img[src="/assets/imagens/Lagos de VuomajåhkK.webp"] {
     transform: scale(1.05);
   }
 
+   .imagem-grande img { /* Garante que a imagem grande tenha estilo correto ao ser exibida */
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+    }
+
   .visor {
     display: none;
     position: fixed;
@@ -589,6 +597,24 @@ img[src="/assets/imagens/Lagos de VuomajåhkK.webp"] {
   
   .visor.ativo {
     display: flex;
+  }
+
+  .visor .fechar { /* Fechamento do visualizador de imagens na galeria*/
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 5px;
+  }
+  
+  .visor .fechar:hover {
+    background-color: #ff0000;
   }
   
   .imagem-grande {
@@ -655,6 +681,8 @@ img[src="/assets/imagens/Lagos de VuomajåhkK.webp"] {
   .lista-imagens img:hover {
     border-color: #203a8f;
   }
+
+
 
 /*formulario-feedback*/
 
