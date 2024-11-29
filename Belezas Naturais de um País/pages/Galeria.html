@@ -31,9 +31,22 @@
             <img src="/assets/imagens/photo-1459236914855-982c6a11b8ee.jfif" alt="Imagem 8">
             <img src="/assets/imagens/kungsleden_42.jpg" alt="Imagem 9">
         </div>
+        <!--
         <div class="visor" id="visor">
             <div class="fechar" id="fechar">&times;</div>
             <div class="imagem-grande" id="imagem-grande"></div>
+            <div class="controles">
+                <button class="anterior" id="anterior">&lt;</button>
+                <button class="proximo" id="proximo">&gt;</button>
+            </div>
+            <div class="lista-imagens" id="lista-imagens"></div>
+        </div>
+        -->
+        
+        <!--Alteração e correção da estrutura para visualizar a imagem ampliada-->
+        <div class="visor" id="visor">
+            <button class="fechar" id="fechar">Fechar &times;</button> <!--Acrescentar e corrigir o botão de fechar-->
+            <img class="imagem-grande" id="imagem-grande" /> <!--Troca da tag div pela tag img-->
             <div class="controles">
                 <button class="anterior" id="anterior">&lt;</button>
                 <button class="proximo" id="proximo">&gt;</button>
